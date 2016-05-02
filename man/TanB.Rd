@@ -35,6 +35,9 @@ stanb(x, c, k, s)
   \item{c, k, s}{
   parameters.
   }
+  \item{log.p}{
+  logical; if TRUE, probabilities p are given as log(p).
+  }
   \item{lower}{
   logical; if TRUE (default), probabilities are P[X ≤ x], otherwise, P[X > x].
   }

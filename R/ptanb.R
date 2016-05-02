@@ -10,11 +10,21 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
-ptanb<-function(q,c,k,s,lower = T,log.p = FALSE){
+ptanb<-function(q,c,k,s,lower = TRUE,log.p = FALSE){
   library(pracma)
-  if (lower == T){
-    tan((pi/4)*(1-(1+(q/s)^c)^(-k)))
-  }else{
-    (1 - tan((pi/4)*(1-(1+(q/s)^c)^(-k))))
+
+  if (log.p == TRUE) {
+    if (lower == TRUE){
+      log(tan((pi/4)*(1-(1+(q/s)^c)^(-k))))
+    }else{
+      log((1 - tan((pi/4)*(1-(1+(q/s)^c)^(-k)))))
+    }
+  } else {
+    if (lower == TRUE){
+      tan((pi/4)*(1-(1+(q/s)^c)^(-k)))
+    }else{
+      (1 - tan((pi/4)*(1-(1+(q/s)^c)^(-k))))
+    }
   }
+
 }

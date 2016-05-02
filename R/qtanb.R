@@ -10,13 +10,25 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
-qtanb<-function(p,c,k,s,lower = T,log.p = FALSE){
+qtanb<-function(p,c,k,s,lower = TRUE,log.p = FALSE){
   require(prama)
-  if (lower == T){
-    y=atan(1-p)
-    s*(((1-((4/pi)*y))^(1/k))-1)^(1/c)
-  }else{
-    y=atan(p)
-    s*(((1-((4/pi)*y))^(1/k))-1)^(1/c)
+
+  if (log.p == TRUE) {
+    if (lower == TRUE){
+      y=atan(1-p)
+      log(s*(((1-((4/pi)*y))^(1/k))-1)^(1/c))
+    }else{
+      y=atan(p)
+      log(s*(((1-((4/pi)*y))^(1/k))-1)^(1/c))
+    }
+  } else {
+    if (lower == TRUE){
+      y=atan(1-p)
+      s*(((1-((4/pi)*y))^(1/k))-1)^(1/c)
+    }else{
+      y=atan(p)
+      s*(((1-((4/pi)*y))^(1/k))-1)^(1/c)
+    }
   }
+
 }
