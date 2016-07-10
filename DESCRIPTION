@@ -2,6 +2,11 @@ Package: TanB
 Type: Package
 Title: The TanB Distribution
 Version: 0.1.0
+Authors@R: c(person("Luciano", "Souza", role = "aut",
+                    email = "lcnsza@gmail.com"),
+             person("Lucas", "Gallindo", role = "aut", email = "lgallindo@gmail.com"),
+             person("Luciano", "Serafim", role = c("aut", "cre"),
+                    email = "lucianoserafimdesouza@gmail.com"))
 Author: Luciano Serafim [aut, cre]
 Maintainer: Luciano Serafim de Souza <lucianoserafimdesouza@gmail.com>
 Description: Density, distribution function, quantile function, random generation and survival function.

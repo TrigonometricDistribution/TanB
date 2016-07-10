@@ -1,14 +1,13 @@
-# htanb
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' The hazard rate function of the TanBullXII probability distribution.
+#'
+#' @param x vector of quantiles.
+#' @param c C parameter.
+#' @param k K parameter.
+#' @param s S parameter.
+#' @return A vector with n observations of the TanBullXII distribution.
+#' @examples
+#' htanb(x,1,1,1)
+#' htanb(x,2,1,1)
 
 htanb<-function(x,c,k,s){
   library(pracma)

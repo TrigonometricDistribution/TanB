@@ -5,23 +5,19 @@
 \alias{qtanb}
 \alias{rtanb}
 \alias{stanb}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
 The TanB Distribution
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
 Density, distribution function, quantile function, random generation and survival function for the sine weibull inverse distribution.
 }
 \usage{
 dtanb(x, c, k, s)
-ptanb(q, c, k, s, lower = T, log.p = FALSE)
-qtanb(p, c, k, s, lower = T, log.p = FALSE)
+ptanb(q, c, k, s, lower = TRUE, log.p = FALSE)
+qtanb(p, c, k, s, lower = TRUE, log.p = FALSE)
 rtanb(n, c, k, s)
 stanb(x, c, k, s)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x, q}{
   vector of quantiles.
@@ -43,15 +39,9 @@ stanb(x, c, k, s)
   }
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
-Detalhes.
+If lower or log.p are not specified they assume the default values of TRUE and FALSE, respectively.
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
 dtanb gives the density, ptanb gives the distribution function, qtanb gives the quantile function, rtanb generates random deviates and stanb gives the survival function.
 
 The length of the result is determined by n for rtanb, and is the maximum of the lengths of the numerical arguments for the other functions.
@@ -59,28 +49,22 @@ The length of the result is determined by n for rtanb, and is the maximum of the
 The numerical arguments other than n are recycled to the length of the result.
 }
 \references{
-%% ~put references to the literature/web site here ~
-Referencias.
+SOUZA, L. New Trigonometric Class of Probabilistic Distributions. 219 p. Thesis (Doctorate in Biometry and Applied Statistics) - Department of Statistics and Information, Federal Rural University of Pernambuco, Recife, Pernambuco, 2015.
+
+BRITO, C. C. R. Method Distributions generator and Probability Distributions Classes. 241 p. Thesis (Doctorate in Biometry and Applied Statistics) - Department of Statistics and Information, Federal Rural University of Pernambuco, Recife, Pernambuco, 2014.
 }
 \author{
-%%  ~~who you are~~
-Autores.
+Dr. Luciano Souza, Luciano Serafim de Souza and Ms. Lucas Gallindo.
 }
-\note{
-%%  ~~further notes~~
-Nota.
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-Ajuda.
+The \href{http://artax.karlin.mff.cuni.cz/r-help/library/actuar/html/Burr.html}{burr} distribution.
 }
 \examples{
-## The function is currently defined as
-x = rtanb(100, 3, 2, 2)
-hist(x, probability = TRUE, ylim = c(0,1))
-curve(dtanb(x, 3, 2, 2),add = T)
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
+c = 2.5;
+k = 3;
+s = 3.5;
+x = rtanb(1000,2.5,3,3.5)
+hist(x,probability = T,border = 0,ylim = c(0,1),xlim = c(0,5),main = "",ylab = "Density",lty = 2,lwd=2)
+curve(dtanb(x,2.5,3,3.5),add = T,lty=1,lwd=2,col=1)
+

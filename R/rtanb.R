@@ -6,8 +6,8 @@
 #' @param s S parameter.
 #' @return A vector with n observations of the TanBullXII distribution.
 #' @examples
-#' rtanb(1, 3, 2, 2)
-#' rtanb(1, 0.3, 0.1, 0.8)
+#' rtanb(1,3,2,2)
+#' rtanb(1,0.3,0.1,0.8)
 
 rtanb<-function(n,c,k,s){
   library(pracma)

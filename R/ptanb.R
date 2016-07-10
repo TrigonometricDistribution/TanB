@@ -1,14 +1,15 @@
-# ptanb
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' The cumulative function of the TanBullXII probability distribution.
+#'
+#' @param q vector of quantiles.
+#' @param c C parameter.
+#' @param k K parameter.
+#' @param s S parameter.
+#' @param lower Lower parameter.
+#' @param log.p Log.p parameter.
+#' @return A vector with n observations of the TanBullXII distribution.
+#' @examples
+#' ptanb(x,32.5,3,3.5,TRUE,FALSE)
+#' ptanb(x,2,3,3,TRUE,FALSE)
 
 ptanb<-function(q,c,k,s,lower = TRUE,log.p = FALSE){
   library(pracma)
