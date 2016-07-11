@@ -1,4 +1,5 @@
-#' Generates random deviates from a TanBullXII probability distribution.
+#' Generates random deviates from a TanBurrXII probability distribution.
+#' @export
 #'
 #' @param n Number of observations to be generated.
 #' @param c C parameter.
@@ -18,10 +19,10 @@ rtanb<-function(n,c,k,s){
 
   while (length(accept) < n){
 
-    U <- rhalfnorm(1)
-    x <- rhalfnorm(1)
+    U <- fdrtool::rhalfnorm(1)
+    x <- fdrtool::rhalfnorm(1)
 
-    if(U <= dtanb(x,c,k,s)/(sqrt(pi)*dhalfnorm(x)/sqrt(2))) {
+    if(U <= dtanb(x,c,k,s)/(sqrt(pi)*fdrtool::dhalfnorm(x)/sqrt(2))) {
       accept[count] = x
       count = count + 1
     }

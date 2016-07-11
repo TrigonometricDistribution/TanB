@@ -1,4 +1,5 @@
 #' The survival function of the TanBullXII probability distribution.
+#' @export
 #'
 #' @param x vector of quantiles.
 #' @param c C parameter.

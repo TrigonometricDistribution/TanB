@@ -1,4 +1,5 @@
 #' The hazard rate function of the TanBullXII probability distribution.
+#' @export
 #'
 #' @param x vector of quantiles.
 #' @param c C parameter.
@@ -11,5 +12,5 @@
 
 htanb<-function(x,c,k,s){
   library(pracma)
-  (((pi/4))*(c*k*x^(c-1)*s^(-c)*(1+(x/s)^c)^(-k-1))*sec((pi/4)*(1-(1+(x/s)^c)^(-k)))^2)/(1-(tan((pi/4)*(1-(1+(x/s)^c)^(-k)))))
+  (((pi/4))*(c*k*x^(c-1)*s^(-c)*(1+(x/s)^c)^(-k-1))*pracma::sec((pi/4)*(1-(1+(x/s)^c)^(-k)))^2)/(1-(tan((pi/4)*(1-(1+(x/s)^c)^(-k)))))
 }

@@ -1,4 +1,5 @@
 #' The quantile function of the TanBullXII probability distribution.
+#' @export
 #'
 #' @param p Vector of probabilities.
 #' @param c C parameter.

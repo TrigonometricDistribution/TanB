@@ -35,7 +35,7 @@ stanb(x, c, k, s)
   logical; if TRUE, probabilities p are given as log(p).
   }
   \item{lower}{
-  logical; if TRUE (default), probabilities are P[X ≤ x], otherwise, P[X > x].
+  logical; if TRUE (default), probabilities are \eqn{P[X \leq x]}, otherwise, \eqn{P[X > x]}.
   }
 }
 \details{
@@ -67,4 +67,4 @@ s = 3.5;
 x = rtanb(1000,2.5,3,3.5)
 hist(x,probability = T,border = 0,ylim = c(0,1),xlim = c(0,5),main = "",ylab = "Density",lty = 2,lwd=2)
 curve(dtanb(x,2.5,3,3.5),add = T,lty=1,lwd=2,col=1)
-
+}
