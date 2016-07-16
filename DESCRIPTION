@@ -1,18 +1,26 @@
 Package: TanB
 Type: Package
 Title: The TanB Distribution
-Version: 0.1.0
-Date: 2016-07-10
-Authors@R: c(person("Luciano", "Souza", role = "aut",
-                    email = "lcnsza@gmail.com"),
-             person("Lucas", "Gallindo", role = "aut", email = "lgallindo@gmail.com"),
-             person("Luciano", "Serafim", role = c("aut", "cre"),
-                    email = "lucianoserafimdesouza@gmail.com"))
-Author:  Luciano Souza, Lucas Gallindo, Luciano Serafim de Souza
-Maintainer: Luciano Serafim de Souza <lucianoserafimdesouza@gmail.com>
-Description: Density, distribution function, quantile function, random generation and survival function for the Tangent Burr Type XII Distribution as defined by SOUZA, L. New Trigonometric Class of Probabilistic Distributions. 219 p. Thesis (Doctorate in Biometry and Applied Statistics) - Department of Statistics and Information, Federal Rural University of Pernambuco, Recife, Pernambuco, 2015, and BRITO, C. C. R. Method Distributions generator and Probability Distributions Classes. 241 p. Thesis (Doctorate in Biometry and Applied Statistics) - Department of Statistics and Information, Federal Rural University of Pernambuco, Recife, Pernambuco, 2014.
-Depends: R (>= 3.0.1)
-Imports: pracma, fdrtool
+Version: 0.1
+Date: 2016-07-14
+Author: Luciano Souza <lcnsza@gmail.com>, Lucas Gallindo <lgallindo@gmail.com>, Luciano Serafim de Souza <lucianoserafimdesouza@gmail.com>
+Maintainer: Lucas Gallindo <lgallindo@gmail.com>
+Description: Density, distribution function, quantile function, random
+    generation and survival function for the Tangent Burr Type XII Distribution as
+    defined by SOUZA, L. New Trigonometric Class of Probabilistic Distributions.
+    219 p. Thesis (Doctorate in Biometry and Applied Statistics) - Department of
+    Statistics and Information, Federal Rural University of Pernambuco, Recife,
+    Pernambuco, 2015 (available at http://www.openthesis.org/documents/New-trigonometric-classes-probabilistic-distributions-602633.html) and BRITO, C. C. R. Method Distributions generator and
+    Probability Distributions Classes. 241 p. Thesis (Doctorate in Biometry and
+    Applied Statistics) - Department of Statistics 
+    University of Pernambuco, Recife, Pernambuco, 2014 (available upon request).
+Depends:
+    R (>= 3.0.1)
+Imports:
+    pracma,
+    fdrtool
 License: MIT + file LICENSE
 LazyData: TRUE
-RoxygenNote: 5.0.0.9000
+URL: https://github.com/TrigonometricDistribution
+BugReports: https://github.com/TrigonometricDistribution/TanB/issues
+RoxygenNote: 5.0.1
