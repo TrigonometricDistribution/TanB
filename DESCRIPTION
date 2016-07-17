@@ -1,8 +1,8 @@
 Package: TanB
 Type: Package
 Title: The TanB Distribution
-Version: 0.1
-Date: 2016-07-14
+Version: 0.2
+Date: 2016-07-17
 Author: Luciano Souza <lcnsza@gmail.com>, Lucas Gallindo <lgallindo@gmail.com>, Luciano Serafim de Souza <lucianoserafimdesouza@gmail.com>
 Maintainer: Lucas Gallindo <lgallindo@gmail.com>
 Description: Density, distribution function, quantile function, random
