@@ -13,3 +13,11 @@ Sine Inverse Weibull Distribution as defined by:
  * BRITO, C. C. R. Method Distributions generator and Probability Distributions Classes. 241 p. Thesis (Doctorate in Biometry and Applied Statistics) - Department of Statistics and Information, Federal Rural University of Pernambuco, Recife, Pernambuco, 2014 (available upon request).
 
  Maintainer: Lucas Gallindo <lgallindo@gmail.com>
+
+ Related:
+
+ * https://github.com/TrigonometricDistribution/CosW
+ * https://github.com/TrigonometricDistribution/SecKW
+ * https://github.com/TrigonometricDistribution/SinIW
+
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.

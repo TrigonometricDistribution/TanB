@@ -15,12 +15,14 @@ Details
 }
 \section{TanB functions}{
 
-\code{\link{dtanb}}
-\code{\link{htanb}}
-\code{\link{ptanb}}
-\code{\link{qtanb}}
-\code{\link{rtanb}}
-\code{\link{stanb}}
+\describe{
+    \item{\code{\link{dtanb}}}{Density function;}
+    \item{\code{\link{htanb}}}{Hazard function;}
+    \item{\code{\link{ptanb}}}{Cumulative distribution function;}
+    \item{\code{\link{qtanb}}}{Quantile function;}
+    \item{\code{\link{rtanb}}}{Random number generation;}
+    \item{\code{\link{stanb}}}{Survival function.}
+}
 }
 
 \seealso{
