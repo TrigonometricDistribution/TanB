@@ -2,7 +2,7 @@
 % Please edit documentation in R/dtanb.R
 \name{dtanb}
 \alias{dtanb}
-\title{The density function of the Tanget Burr Type XII probability distribution.}
+\title{The density function of the Tangent Burr Type XII probability distribution.}
 \usage{
 dtanb(x, c, k, s)
 }
@@ -16,13 +16,17 @@ dtanb(x, c, k, s)
 \item{s}{S parameter.}
 }
 \value{
-A vector with n observations of the Tanget Burr Type XII distribution.
+A vector with n observations of the Tangent Burr Type XII distribution.
 }
 \description{
-The density function of the Tanget Burr Type XII probability distribution.
+The density function of the Tangent Burr Type XII probability distribution.
 }
 \examples{
 dtanb(0.5,32.5,3,3.5)
 dtanb(0.5,2,3,3)
 }
-
+\seealso{
+Other Basic functions for the Tangent-Burr Type XII distribution: \code{\link{htanb}},
+  \code{\link{ptanb}}, \code{\link{qtanb}},
+  \code{\link{rtanb}}, \code{\link{stanb}}
+}

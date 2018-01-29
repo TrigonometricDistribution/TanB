@@ -2,7 +2,7 @@
 % Please edit documentation in R/stanb.R
 \name{stanb}
 \alias{stanb}
-\title{The survival function of the Tanget Burr Type XII probability distribution.}
+\title{The survival function of the Tangent Burr Type XII probability distribution.}
 \usage{
 stanb(x, c, k, s)
 }
@@ -16,13 +16,17 @@ stanb(x, c, k, s)
 \item{s}{S parameter.}
 }
 \value{
-A vector with n observations of the Tanget Burr Type XII distribution.
+A vector with n observations of the Tangent Burr Type XII distribution.
 }
 \description{
-The survival function of the Tanget Burr Type XII probability distribution.
+The survival function of the Tangent Burr Type XII probability distribution.
 }
 \examples{
 ptanb(0.5, 1, 1, 1)
 ptanb(0.5, 2, 1, 1)
 }
-
+\seealso{
+Other Basic functions for the Tangent-Burr Type XII distribution: \code{\link{dtanb}},
+  \code{\link{htanb}}, \code{\link{ptanb}},
+  \code{\link{qtanb}}, \code{\link{rtanb}}
+}

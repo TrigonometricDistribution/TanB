@@ -29,4 +29,8 @@ The cumulative function of the Tangent Burr XII probability distribution.
 ptanb(0.5, 32.5, 3, 3.5, TRUE, FALSE)
 ptanb(0.5, 2, 3, 3, TRUE, FALSE)
 }
-
+\seealso{
+Other Basic functions for the Tangent-Burr Type XII distribution: \code{\link{dtanb}},
+  \code{\link{htanb}}, \code{\link{qtanb}},
+  \code{\link{rtanb}}, \code{\link{stanb}}
+}

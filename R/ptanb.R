@@ -11,20 +11,21 @@
 #' @examples
 #' ptanb(0.5, 32.5, 3, 3.5, TRUE, FALSE)
 #' ptanb(0.5, 2, 3, 3, TRUE, FALSE)
+#' @family Basic functions for the Tangent-Burr Type XII distribution
 
-ptanb<-function(q,c,k,s,lower = TRUE,log.p = FALSE){
-  if (log.p == TRUE) {
-    if (lower == TRUE){
-      log(tan((pi/4)*(1-(1+(q/s)^c)^(-k))))
-    }else{
-      log((1 - tan((pi/4)*(1-(1+(q/s)^c)^(-k)))))
+ptanb <- function(q, c, k, s, lower = TRUE, log.p = FALSE) {
+    if (log.p == TRUE) {
+        if (lower == TRUE) {
+            log(tan((pi/4) * (1 - (1 + (q/s)^c)^(-k))))
+        } else {
+            log((1 - tan((pi/4) * (1 - (1 + (q/s)^c)^(-k)))))
+        }
+    } else {
+        if (lower == TRUE) {
+            tan((pi/4) * (1 - (1 + (q/s)^c)^(-k)))
+        } else {
+            (1 - tan((pi/4) * (1 - (1 + (q/s)^c)^(-k))))
+        }
     }
-  } else {
-    if (lower == TRUE){
-      tan((pi/4)*(1-(1+(q/s)^c)^(-k)))
-    }else{
-      (1 - tan((pi/4)*(1-(1+(q/s)^c)^(-k))))
-    }
-  }
-
+    
 }

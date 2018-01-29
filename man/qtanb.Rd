@@ -2,7 +2,7 @@
 % Please edit documentation in R/qtanb.R
 \name{qtanb}
 \alias{qtanb}
-\title{The quantile function of the Tanget Burr Type XII probability distribution.}
+\title{The quantile function of the Tangent Burr Type XII probability distribution.}
 \usage{
 qtanb(p, c, k, s, lower = TRUE, log.p = FALSE)
 }
@@ -20,13 +20,17 @@ qtanb(p, c, k, s, lower = TRUE, log.p = FALSE)
 \item{log.p}{Log.p parameter.}
 }
 \value{
-A vector with n observations of the Tanget Burr Type XII distribution.
+A vector with n observations of the Tangent Burr Type XII distribution.
 }
 \description{
-The quantile function of the Tanget Burr Type XII probability distribution.
+The quantile function of the Tangent Burr Type XII probability distribution.
 }
 \examples{
 ptanb(0.5,1,1,1,TRUE,FALSE)
 ptanb(0.5,2,1,1,TRUE,FALSE)
 }
-
+\seealso{
+Other Basic functions for the Tangent-Burr Type XII distribution: \code{\link{dtanb}},
+  \code{\link{htanb}}, \code{\link{ptanb}},
+  \code{\link{rtanb}}, \code{\link{stanb}}
+}

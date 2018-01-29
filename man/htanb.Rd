@@ -2,7 +2,7 @@
 % Please edit documentation in R/htanb.R
 \name{htanb}
 \alias{htanb}
-\title{The hazard rate function of the Tanget Burr Type XII probability distribution.}
+\title{The hazard rate function of the Tangent Burr Type XII probability distribution.}
 \usage{
 htanb(x, c, k, s)
 }
@@ -16,13 +16,17 @@ htanb(x, c, k, s)
 \item{s}{S parameter.}
 }
 \value{
-A vector with n observations of the Tanget Burr Type XII distribution.
+A vector with n observations of the Tangent Burr Type XII distribution.
 }
 \description{
-The hazard rate function of the Tanget Burr Type XII probability distribution.
+The hazard rate function of the Tangent Burr Type XII probability distribution.
 }
 \examples{
 htanb(0.5, 1, 1, 1)
 htanb(0.5, 2, 1, 1)
 }
-
+\seealso{
+Other Basic functions for the Tangent-Burr Type XII distribution: \code{\link{dtanb}},
+  \code{\link{ptanb}}, \code{\link{qtanb}},
+  \code{\link{rtanb}}, \code{\link{stanb}}
+}

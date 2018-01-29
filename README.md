@@ -1,3 +1,8 @@
+
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/TanB)](https://CRAN.R-project.org/package=TanB)
+[![Downloads](http://cranlogs.r-pkg.org/badges/TanB)](https://CRAN.R-project.org/package=TanB)
+[![Total-Downloads](https://cranlogs.r-pkg.org/badges/grand-total/TanB)](https://CRAN.R-project.org/package=TanB)
+
 # The TanB Probability Distribution
 
 This package provides functions for the density, cumulative distribution,

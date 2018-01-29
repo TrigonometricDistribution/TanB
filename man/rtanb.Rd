@@ -2,7 +2,7 @@
 % Please edit documentation in R/rtanb.R
 \name{rtanb}
 \alias{rtanb}
-\title{Generates random deviates from a TanBurrXII probability distribution.}
+\title{Generates random deviates from a Tangent Burr Type XII probability distribution.}
 \usage{
 rtanb(n, c, k, s)
 }
@@ -16,13 +16,17 @@ rtanb(n, c, k, s)
 \item{s}{S parameter.}
 }
 \value{
-A vector with n observations of the Tanget Burr Type XII distribution.
+A vector with n observations of the Tangent Burr Type XII distribution.
 }
 \description{
-Generates random deviates from a TanBurrXII probability distribution.
+Generates random deviates from a Tangent Burr Type XII probability distribution.
 }
 \examples{
 rtanb(1,3,2,2)
 rtanb(1,0.3,0.1,0.8)
 }
-
+\seealso{
+Other Basic functions for the Tangent-Burr Type XII distribution: \code{\link{dtanb}},
+  \code{\link{htanb}}, \code{\link{ptanb}},
+  \code{\link{qtanb}}, \code{\link{stanb}}
+}

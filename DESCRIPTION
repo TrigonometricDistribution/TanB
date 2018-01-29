@@ -1,7 +1,7 @@
 Package: TanB
 Type: Package
 Title: The TanB Distribution
-Version: 0.2
+Version: 0.2.1
 Date: 2016-07-17
 Author: Luciano Souza <lcnsza@gmail.com>, Lucas Gallindo <lgallindo@gmail.com>, Luciano Serafim de Souza <lucianoserafimdesouza@gmail.com>
 Maintainer: Lucas Gallindo <lgallindo@gmail.com>
@@ -23,4 +23,7 @@ License: MIT + file LICENSE
 LazyData: TRUE
 URL: https://github.com/TrigonometricDistribution
 BugReports: https://github.com/TrigonometricDistribution/TanB/issues
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
